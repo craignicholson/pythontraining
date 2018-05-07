@@ -4,9 +4,11 @@
 Usage:
     python3 words.py <URL>
 
+help() can retrieve the doc strings.... <kewl>
 """
 import sys
 from urllib.request import urlopen
+
 
 # #! on mac or linux we must mark the .py file as executable
 # helps users see the correct version of python to use with this .py
@@ -29,6 +31,7 @@ def fetch_words(url):
         from a document.
     """
     with urlopen(url) as story:
+        # with blocks
         story_words_byte = []
         story_words = []
 
@@ -72,7 +75,7 @@ def main(url):
 # this will print __main__
 # to get this to execute out function we will add in if statement
 if __name__ == '__main__':
-    main(sys.argv[1]) # The 0th arg is the module filename
+    main(sys.argv[1])  # The 0th arg is the module filename not the module name
 
 # print(story_words)
 # print(story_words_byte)
