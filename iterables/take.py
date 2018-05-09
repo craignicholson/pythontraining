@@ -51,6 +51,15 @@ def run_distinct():
         print(item)
 
 
+def calc_square():
+    """Uses hardly any memory and each use of generator
+    has to be re-caled since they are once use objects. """
+
+    s = sum(x*x for x in range(1,10000001))
+    print(s)
+
+
 if __name__ == '__main__':
     # run_take()
-    run_distinct()
+    # run_distinct()
+    calc_square()
