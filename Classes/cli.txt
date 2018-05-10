@@ -1,0 +1,24 @@
+RPEL Code
+
+from airtravel import *
+from pprint import pprint as pp
+
+f,g = f.make_flights()
+pp(f._seating)
+pp(f.num_available_seats()
+
+# example of polymorphism - make_boarding_cards did not need to know about
+# console_card_printer
+# replacing console with html card printer exercises polymorphism
+f.make_boarding_cards(console_card_printer)
+
+# Duck Typing where an objects fitness for particular use
+# is determined at runtime at the time of use.
+
+# demo base class implementing num_seats
+a = AirbusA319("G-EZBT")
+a.num_seats()
+b = Boeing777("N717AN")
+b.num_seats()
+
+
